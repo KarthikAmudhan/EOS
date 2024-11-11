@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wood</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+body {
+    background-image: linear-gradient(to right,rgb(240, 136, 77) , rgb(247, 195, 162));
+    text-align: center;
+}
+.he,.hee{
+    border-bottom: 3px solid black;
+    background-image: linear-gradient(to right,rgb(240, 136, 77) , rgb(247, 195, 162));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    /* background: linear-gradient(135deg, #ff7e5f, #feb47b, #86a8e7); */
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #444;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #feb47b;
+}
+
+#about-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+}
+
+#about-content .image {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-item {
+    margin-bottom: 20px;
+    width: 40%;
+    text-align: center;
+}
+
+#about-content .image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content {
+    flex: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 88%;
+}
+
+#photo {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+#screen {
+    max-width: 100%; 
+    height: auto;
+}
+
+img{
+    float: left;
+}
+
+footer {
+    text-align: left;
+    background-image: linear-gradient(to right,rgb(240, 136, 77) , rgb(247, 195, 162));
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <main class="hee">
+        <div class="container">
+            <nav class="nav nav-pills nav-justified">
+                <a class="nav-link btn btn-light text-dark" href="index.html">Home</a>
+                <a class="nav-link btn btn-light text-dark" href="wood.html">Wood</a>
+                <a class="nav-link btn btn-light text-dark" href=".html">Glass</a>
+                <a class="nav-link btn btn-light text-dark" href="about.html">About Us</a>
+                <a class="nav-link btn btn-light text-dark" href="contactus.html">Contact Us</a>
+              </nav>
+        </div>
+        </main>
+
+        <section id="about-content">
+            <div class="image">
+                <div class="image-item">
+                    <img src="./Images/table.jpeg">
+                    <a href="table.html">Table</a>
+                </div>
+                <div class="image-item">
+                    <img src="./Images/small.jpeg">
+                    <a href="./chair.html">Chair</a>
+                </div>
+                <div class="image-item">
+                    <img src="./Images/sofa.jpeg">
+                    <a href="sofa.html">Sofa</a>
+                </div>
+            </div>
+    
+            <div class="content">
+                <div class="column">
+                    
+                        <h2>Wood - The Nature</h2>
+                        <div id="photo">
+                            <img id="screen" src="./Images/allfurni.jpeg">
+                        </div>
+                        <p>
+                            Furniture refers to objects intended to support various human activities such as seating (e.g., stools, chairs, and sofas), eating (tables), storing items, working, and sleeping (e.g., beds and hammocks). Furniture is also used to hold objects at a convenient height for work (as horizontal surfaces above the ground, such as tables and desks), or to store things (e.g., cupboards, shelves, and drawers).Furniture can be a product of design and can be considered a form of decorative art. In addition to furniture's functional role, it can serve a symbolic or religious purpose. It can be made from a vast multitude of materials, including metal, plastic, and wood. <br> Furniture can be made using a variety of woodworking joints which often reflects the local culture.People have been using natural objects, such as tree stumps, rocks and moss, as furniture since the beginning of human civilization and continues today in some households/campsites. Archaeological research shows that from around 30,000 years ago, people started to construct and carve their own furniture, using wood, stone, and animal bones. Early furniture from this period is known from artwork such as a Venus figurine found in Russia, depicting the goddess on a throne.
+                        </p>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <p>© 2024 Karthik Amudhan. All rights reserved.</p>
+        </footer>
+</body>
+</html>

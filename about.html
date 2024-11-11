@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalizes.css">
+    <link rel="stylesheet" href="style/content1.css">
+    <title>About</title>
+    <style>
+      /* General body styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa; /* Light background for the page */
+        margin: 0;
+        padding: 0;
+        color: #333; /* Darker color for readability */
+    }
+    
+    /* Header styles */
+    header {
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    header h2 {
+        margin: 0;
+        font-size: 38px;
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    header h4 {
+        margin-top: 10px;
+        font-size: 20px;
+        color: #666;
+    }
+    
+    /* Main layout container */
+    main {
+        display: flex; /* Enable flexbox for the two-column layout */
+        max-width: 1200px; /* Limit max-width for better content control */
+        margin: 20px auto; /* Center the content */
+        padding: 0 15px; /* Add padding */
+    }
+    
+    /* Section styling */
+    section {
+        flex: 3; /* Allocate more space to the section */
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-right: 20px; /* Space between section and aside */
+    }
+    
+    .responsive-image {
+        width: 100%; /* Responsive image */
+        max-height: 250px; /* Set a maximum height for the image */
+        object-fit: cover; /* Maintain aspect ratio while cropping */
+        border-radius: 5px;
+        margin-bottom: 15px; /* Space below the image */
+    }
+    
+    .media-section {
+        margin: 20px 0;
+    }
+    
+    .media-section video,
+    .media-section audio {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    aside {
+        flex: 1;
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        min-height: 400px;
+    }
+    
+    aside h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    aside ul {
+        padding-left: 0;
+    }
+    
+    aside ul li {
+        margin-bottom: 10px;
+    }
+    
+    aside ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    aside ul li a:hover {
+        text-decoration: underline;
+        color: #007bff;
+    }
+    
+    /* PDF link styling */
+    .pdf-link {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    
+    .pdf-link:hover {
+        background-color: #0056b3;
+    }
+    
+    footer {
+        background-color: #343a40;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    @media (max-width: 768px) {
+        main {
+            flex-direction: column;
+            padding: 0;
+        }
+    
+        section {
+            margin-right: 0; /* Remove right margin for stacked layout */
+            margin-bottom: 20px; /* Space between stacked elements */
+        }
+    
+        aside {
+            margin-bottom: 20px; /* Space below the aside */
+        }
+    
+        header h2 {
+            font-size: 28px; /* Adjust font size for mobile */
+        }
+    
+        header h4 {
+            font-size: 18px; /* Adjust subtitle size */
+        }
+    
+        aside h3 {
+            font-size: 20px; /* Adjust font size in the aside */
+        }
+    
+        aside ul li {
+            margin-bottom: 5px; /* Reduce margin for list items */
+        }
+    
+        footer {
+            font-size: 12px; /* Smaller footer text on mobile */
+        }
+    }
+    </style>    
+</head>
+<body>
+    <header>
+        <h2>About</h2>
+    </header>
+
+    <main>
+        <section id="section">
+            <img src="./Images/download.jpeg" alt="Temple Image" class="responsive-image">
+            
+            <!-- Video Section -->
+            <div class="media-section">
+                <h3>Watch Our Video</h3>
+                <video controls>
+                    <source src="./Video/making video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Audio Section -->
+            <div class="media-section">
+                <h3>Listen to Our Audio</h3>
+                <audio controls>
+                    <source src="./Audio/ad.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+
+            <!-- PDF Link Section -->
+            <div class="media-section">
+                <h3>Download Our PDF</h3>
+                <a href="./PDF/details.pdf" target="_blank" class="pdf-link">Download PDF</a>
+            </div>
+        </section>
+
+        <aside>
+            <article id="aside-content">
+                <h3>ABOUT US</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="wood.html">Wood Works</a></li>
+                  <li><a href="">Trees</a></li>
+                  <li><a href="wood.html">see more</a></li>
+                </ul>
+            </article>
+        </aside>
+    </main>
+
+    <footer>&copy; Karthik Amudhan 2024</footer>
+</body>
+</html>
